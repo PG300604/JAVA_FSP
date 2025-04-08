@@ -21,7 +21,7 @@ class Thread1 extends Thread {
         this.t = t;
     }
     public void run() {
-        t.displayTable(10);
+        t.displayTable(20);
     }
 }
 
@@ -38,13 +38,13 @@ class Thread2 extends Thread {
 public class SyncBlock {
     public static void main(String[] args) {
         PerformTask p1 = new PerformTask();
-        PerformTask p2 = new PerformTask();
 
         Thread1 t1 = new Thread1(p1);
-        Thread2 t2 = new Thread2(p2);
+        Thread2 t2 = new Thread2(p1);
 
         t1.start();
         t2.start();
     }
 }
+
 
