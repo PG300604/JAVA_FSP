@@ -11,11 +11,6 @@ public class array1 {
         System.out.println(data[3]);
         System.out.println(data.length);
 
-        int[] values=new int[] {1,2,3,4,5};
-        int sum=0;
-        for(int val:values){
-            sum+=val;
-        }
-        System.out.println("Sum = "+sum);
+            }
     }
 }
