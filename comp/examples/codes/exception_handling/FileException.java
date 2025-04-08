@@ -8,7 +8,11 @@ public class FileException {
         public static void fileRead() throws IOException {
             FileReader fileReader = new FileReader("C:/Users/priya/OneDrive/Desktop/New Text Document.txt");
             BufferedReader bufferedReader = new BufferedReader(fileReader);
-            System.out.println(bufferedReader.readLine());
+            //System.out.println(bufferedReader.readLine());
+            String line;
+            while((line =bufferedReader.readLine())!=null){
+                System.out.println(line);
+            }
             bufferedReader.close();
         }
 
